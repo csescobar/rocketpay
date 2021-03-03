@@ -1,0 +1,45 @@
+File verbosity level: 9
+date       time         ( uptime  ) [ thread name/id ]                   file:line     v| 
+2021-03-03 14:48:38.807 (   0.004s) [        BED9688 ]             loguru.cpp:755    INF| Logging to 'totvsls.log', mode: 'w', verbosity: 9
+2021-03-03 14:48:38.811 (   0.008s) [        BED9688 ]             loguru.cpp:755    INF| Logging to 'totvslsfull.log', mode: 'a', verbosity: 9
+(   0.011s) [main thread     ]             loguru.cpp:591   | arguments: /home/cesar/.vscode/extensions/totvs.tds-vscode-1.2.1/node_modules/@totvs/tds-ls/bin/linux/advpls --language-server --log-file=totvsls.log --record=totvsls --log-file-append=totvslsfull.log
+(   0.012s) [main thread     ]             loguru.cpp:594   | Current dir: /home/cesar/Cursos/Elixir nlw4/rocketpay
+(   0.012s) [main thread     ]             loguru.cpp:596   | stderr verbosity: -3
+(   0.012s) [main thread     ]             loguru.cpp:597   | -----------------------------------
+(   0.012s) [main thread     ]    security_manager.cc:855   | lsRsaInit
+(   0.022s) [main thread     ]    security_manager.cc:1061  | userRsaInit
+(   0.022s) [main thread     ]    security_manager.cc:1080  | Loading user prv key.
+(   0.022s) [main thread     ]    security_manager.cc:1111  | Loading user pub key.
+(   0.022s) [main thread     ]    security_manager.cc:1210  | Loading user symm key.
+(   0.029s) [querydb         ] msg_lsp_initialize_req:489   | Start Running initialize
+(   0.029s) [querydb         ] msg_lsp_initialize_req:495   | Init parameters: {"compilationDatabaseCommand":"","compilationDatabaseDirectory":"","cacheDirectory":"","cacheFormat":"json","resourceDirectory":"","discoverSystemIncludes":true,"extraClangArguments":[],"progressReportFrequencyMs":500,"emitQueryDbBlocked":false,"emitInactiveRegions":false,"showDocumentLinksOnIncludes":true,"codeLens":{"localVariables":true},"completion":{"enableSnippets":true,"detailedLabel":false,"dropOldRequests":true,"filterAndSort":true,"includeMaxPathSize":30,"includeSuffixWhitelist":[".h",".hpp",".hh",".ch"],"includeBlacklist":[],"includeWhitelist":[]},"formatting":{"enabled":false},"diagnostics":{"blacklist":[],"whitelist":[],"frequencyMs":0,"onParse":true,"onType":true},"highlight":{"enabled":false,"blacklist":[],"whitelist":[]},"index":{"attributeMakeCallsToCtor":true,"blacklist":[],"whitelist":[],"comments":2,"enabled":true,"logSkippedPaths":false,"threads":0},"workspaceSymbol":{"maxNum":1000,"sort":true},"xref":{"maxNum":2000},"enableIndexOnDidChange":false}
+(   0.029s) [querydb         ] msg_lsp_initialize_req:510   | [querydb] Initialize in directory /home/cesar/Cursos/Elixir nlw4/rocketpay with uri file:///home/cesar/Cursos/Elixir%20nlw4/rocketpay
+(   0.029s) [querydb         ] msg_lsp_initialize_req:567   | Using -resource-dir=/home/cesar/Cursos/Elixir nlw4/rocketpay/DEFAULT_RESOURCE_DIRECTORY
+(   0.029s) [querydb         ] msg_lsp_initialize_req:570   | Send initialization before starting indexers, so we don't send a status update too early.
+(   0.029s) [querydb         ] msg_lsp_initialize_req:590   | Set project root.
+(   0.029s) [querydb         ]               timer.cc:41    | compile_commands.json advpllang time took 0.0 ms
+(   0.029s) [querydb         ]               timer.cc:41    | compile_commands.json our time took 0.0 ms
+(   0.029s) [querydb         ]               timer.cc:41    | [perf] Loaded compilation entries (0 files) took 0.35 ms
+(   0.030s) [querydb         ] msg_lsp_initialize_req:621   | Starting 3 indexers
+(   0.030s) [querydb         ]               timer.cc:41    | [perf] Dispatched initial index requests took 0.0 ms
+(   0.030s) [querydb         ] msg_lsp_initialize_req:650   | End Running initialize
+(   0.044s) [stdout          ]               timer.cc:41    | [e2e] Running  took 0.1 ms
+(   0.044s) [stdout          ]               timer.cc:41    | [e2e] Running initialize took 14.14875 ms
+(   0.045s) [querydb         ] msg_lsp_initialized_no:22    | Got Initialized Notification
+(   0.045s) [scan_includes   ]               timer.cc:41    | [perf] Scanning for includes took 15.15408 ms
+(   0.053s) [stdout          ]               timer.cc:41    | [e2e] Running  took 9.9413 ms
+(   5.831s) [querydb         ] msg_totvsserver_change:45    | Start Running $totvsserver/changeSetting
+(   5.831s) [querydb         ] msg_totvsserver_change:50    | ChangeSetting : with scope advpls, key autocomplete, value LS
+(   5.831s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager ChangeSetting server  took 0.9 ms
+(   5.831s) [querydb         ] msg_totvsserver_change:94    | End Running $totvsserver/changeSetting
+(   5.831s) [querydb         ] msg_totvsserver_change:45    | Start Running $totvsserver/changeSetting
+(   5.831s) [querydb         ] msg_totvsserver_change:50    | ChangeSetting : with scope advpls, key notificationlevel, value none
+(   5.831s) [querydb         ]               timer.cc:41    | [perf] ConnectionManager ChangeSetting server  took 0.1 ms
+(   5.831s) [querydb         ] msg_totvsserver_change:94    | End Running $totvsserver/changeSetting
+(   5.831s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/changeSetting took 0.208 ms
+(   5.831s) [stdout          ]               timer.cc:41    | [e2e] Running $totvsserver/changeSetting took 0.231 ms
+(2954.404s) [querydb         ] msg_lsp_shutdown_reque:26    | Start Running shutdown
+(2954.404s) [querydb         ] msg_lsp_shutdown_reque:30    | End Running shutdown
+(2954.404s) [stdout          ]               timer.cc:41    | [e2e] Running shutdown took 0.107 ms
+(2954.411s) [querydb         ] msg_lsp_exit_notificat:18    | Exiting; got exit message
+(2954.411s) [querydb         ]             loguru.cpp:471   | atexit
